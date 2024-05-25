@@ -1,0 +1,40 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "/zangzelin/ysq_project/evnet-ysq/",
+            "env":{
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            // "args": [
+
+            //     "--class_num","10",
+            //     "--first_epoch","99",
+            //     "--kmean_scale","100",
+            //     "--epochs","1000",
+            //     // "--Wscale","1000",
+            //     "--first_epoch","9",
+            //     "--data_name","Mnist",
+            //     "--l_token_2","20",
+            //     "--l_token","50",
+            //     "--rec","2.0",
+            //     "--first_epoch","199",
+            //     "--n_f_per_cluster","2",
+            //     "--n_cluster","40",
+            //     "--nu","0.01"
+
+
+            // ],
+            "justMyCode": true
+        }
+    ]
+}

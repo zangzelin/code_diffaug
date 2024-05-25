@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "/opt/anaconda3/envs/py38torch180/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "none",
+    "python.linting.mypyEnabled": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    }
+}

@@ -1,0 +1,45 @@
+seed_everything: 42
+data:
+  batch_size: 500
+  num_workers: 10
+  data_name: Gast10k1457D8
+  K: 500
+  pca_dim: 50
+  n_f_per_cluster: 3
+  l_token: 10
+  data_path: /namename/data
+model:
+  l_token: 50
+  num_input_dim: 1457
+  num_layers_Transformer: 2
+  l_token_2: 50
+  nu: 0.01
+  preprocess_epoch: 400
+  joint_epoch: 20000
+  n_timestep: 1000
+  lr: 0.001
+  weight_decay: 0.001
+  rand_rate: 0.9
+trainer:
+  logger:
+    class_path: lightning.pytorch.loggers.WandbLogger
+    init_args:
+      name: test
+      project: DIFFAUG_Table
+      save_dir: wandb
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        monitor: SVC_train
+        dirpath: ./checkpoints
+        filename: gast-{epoch:03d}-{SVC_train:.5f}
+        save_top_k: 5
+        mode: max
+  max_epochs: 25000
+  devices: [0]
+  accelerator: gpu
+  check_val_every_n_epoch: 50
+  enable_checkpointing: True
+  enable_progress_bar: False
+# trainer.strategy: ddp_find_unused_parameters_true
+# trainer.strategy: ddp
