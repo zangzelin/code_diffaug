@@ -31,7 +31,7 @@ We use Gast(from 10x Visium) dataset for demonstration. On our 64-core A100 mach
 For 10x Visium platform, datasets are downloaded and handled automatically. 
 For Stereo-seq and SlideSeq platforms, check section `Data Description` in our paper to get data. 
 
-We provided a universal standard to handle multi platform datasets. Some datasets need to be processed as one file and its path should be `data/<dataset>/data.h5ad`.
+We provided a universal standard to handle multi platform datasets. Some datasets need to be processed as one file and its path should be `data/<dataset>`.
 
 ```bash
 python ./main_diffaug.py fit --config=<dataset>.yaml
