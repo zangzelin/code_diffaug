@@ -1,4 +1,4 @@
-# Must: Maximizing Latent Capacity of Spatial Transcriptomics Data
+# DiffAug: Enhance Unsupervised Contrastive Learning with Domain-Knowledge-Free Diffusion-based Data Augmentation
 
 ![Main Figure](figs/intro_v3.png)
 
