@@ -40,10 +40,10 @@ python ./main_diffaug.py fit --config=<dataset>.yaml
 ```bash
 result
 |-- conf
-    |-- gast.yaml            # embedding
-    |-- gast.yaml            # embedding
-    |-- gast.yaml            # embedding
-    |-- gast.yaml            # embedding
+    |-- gast.yaml               # GA1457 dataset
+    |-- activity.yaml           # MC1374 dataset
+    |-- hcl.yaml                # HCL500 dataset
+    |-- samusik.yaml            # SAM561 dataset
 ```
 
 
